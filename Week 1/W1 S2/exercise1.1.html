@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic Page with Video and Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <article>
+        <h2>Watch This Video</h2>
+        <video width="320" height="240" controls>
+          <source src="sample.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <article>
+        <h2>Register Here</h2>
+        <form>
+          <label>Name:
+            <input type="text" name="name" required placeholder="Enter your name">
+          </label><br>
+          <label>Email:
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label><br>
+          <label>Age:
+            <input type="number" name="age" required placeholder="18">
+          </label><br>
+          <input type="submit" value="Submit">
+        </form>
+      </article>
+
+      <article>
+        <h2>Clickable Image Map</h2>
+        <img src="map-image.jpg" alt="Image Map" usemap="#myMap">
+        <map name="myMap">
+          <area shape="rect" coords="34,44,270,350" href="https://www.example.com" alt="External Link">
+        </map>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Website</p>
+  </footer>
+</body>
+</html>

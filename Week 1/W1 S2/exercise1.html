@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practices</title>
+
+  <!-- Fuente bonita de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos internos con diseño moderno y colores bonitos -->
+  <style>
+    /* Fuente general y estilos base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f9f9f9; /* Fondo neutro bonito */
+      color: #333;
+    }
+
+    header, nav, footer {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    header {
+      background-color: #e0f0ff;
+      color: #1a3c66;
+    }
+
+    nav {
+      background-color: #f1f1f1;
+      color: #444;
+    }
+
+    main {
+      background-color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    main h1 {
+      margin-bottom: 1.5rem;
+      color: #1a3c66;
+    }
+
+    iframe {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #f0f4f8;
+      gap: 1.5rem;
+      padding: 2rem;
+      justify-content: center;
+    }
+
+    article {
+      flex: 1 1 45%;
+      max-width: 600px;
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    article h1 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #1a3c66;
+    }
+
+    footer {
+      background-color: #dfe6ed;
+      text-align: center;
+      padding: 1rem;
+      color: #555;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      article {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Here goes header</h2>
+  </header>
+
+  <nav>
+    <p>Here goes a navbar</p>
+  </nav>
+
+  <main>
+    <h1>Here goes main</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yB4n_K7dZV8?si=OZb_D17_DAXBV3_d" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </main>
+
+  <section>
+    <article class="article1">
+      <h1>Article One</h1>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lafechadeportes/video/7501879523235908869"
+        data-video-id="7501879523235908869" style="max-width: 605px; min-width: 325px;">
+        <section>
+          <a target="_blank" href="https://www.tiktok.com/@lafechadeportes?refer=embed">@lafechadeportes</a> 
+          Dembélé no triunfó en Barcelona, pero ahora es estrella del PSG.
+        </section>
+      </blockquote>
+    </article>
+
+    <article class="article2">
+      <h1>Article Two</h1>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@diego_futbolclub/video/7507033184261983494"
+        data-video-id="7507033184261983494" style="max-width: 605px; min-width: 325px;">
+        <section>
+          <a target="_blank" href="https://www.tiktok.com/@diego_futbolclub?refer=embed">@diego_futbolclub</a> 
+          Primera derrota de Son 🥹
+        </section>
+      </blockquote>
+    </article>
+
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </section>
+
+  <footer>
+    <p>Here goes footer</p>
+  </footer>
+
+</body>
+</html>
