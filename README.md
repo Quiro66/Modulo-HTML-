@@ -21,6 +21,9 @@ La estructura está **organizada por semanas y sesiones**, lo que facilita el se
 │ ├── exercise2.html
 │ └── exercise3.html
 └── Week1 Session 3/
+  ├── index.html
+  └── Assets
+
  ```
 
 ## 🔍 Detalles de la Organización
