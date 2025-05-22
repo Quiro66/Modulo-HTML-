@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Training Section 3</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f4f8;
+      color: #333;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav li {
+      display: inline;
+      margin-right: 15px;
+    }
+    input, textarea, select, button {
+      margin: 5px 0 15px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 400px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. My First HTML Page -->
+  <h1>Hello World</h1>
+  <p>This is my first HTML page.</p>
+
+  <!-- 2. Lists -->
+  <h2>Favorite Fruits</h2>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <h2>Steps to Make Coffee</h2>
+  <ol>
+    <li>Boil water</li>
+    <li>Add coffee powder</li>
+    <li>Stir and serve</li>
+  </ol>
+
+  <!-- 3. Links -->
+  <h2>Links</h2>
+  <a href="https://www.google.com" target="_blank">Open Google</a><br>
+  <a href="contact.html">Contact Page</a><br>
+  <a href="https://github.com">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" alt="GitHub">
+  </a>
+
+  <!-- 4. Image -->
+  <h2>Image</h2>
+  <img src="Assets/js.png" alt="Sample Image">
+
+  <!-- 5. Video -->
+  <h2>Video</h2>
+  <video width="320" height="240" controls>
+    <source src="Assets/La Caida de Edgar (el original).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jR5V5QAhjOE?si=vHQg4-oHZUjGRXJM&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <!-- 6. Table -->
+  <h2>Table</h2>
+  <table>
+    <tr><th>Name</th><th>Age</th><th>City</th></tr>
+    <tr><td>John</td><td>25</td><td>New York</td></tr>
+    <tr><td>Mary</td><td>30</td><td>Chicago</td></tr>
+    <tr><td>Mike</td><td>28</td><td>Los Angeles</td></tr>
+  </table>
+
+  <!-- 7. Navigation -->
+  <h2>Navigation Menu</h2>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 8. Contact Form -->
+  <h2>Contact Form</h2>
+  <form>
+    Name: <input type="text" name="name"><br>
+    Email: <input type="email" name="email"><br>
+    Message:<br><textarea name="message"></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- 9. Complete Form -->
+  <h2>Complete Form</h2>
+  <form>
+    Name: <input type="text" name="name"><br>
+    Email: <input type="email" name="email"><br>
+    Password: <input type="password" name="password"><br>
+    Age: <input type="number" name="age"><br>
+    Birthdate: <input type="date" name="dob"><br>
+    Gender:
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br>
+    City:
+    <select name="city">
+      <option value="ny">New York</option>
+      <option value="la">Los Angeles</option>
+      <option value="chi">Chicago</option>
+    </select><br>
+    <input type="checkbox" name="terms"> I accept the terms<br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- 10. Personal Profile Page -->
+  <h2>Profile</h2>
+  <img src="https://via.placeholder.com/100" alt="Profile Picture"><br>
+  <p>Hello! I'm a web developer learning HTML.</p>
+  <h3>Hobbies</h3>
+  <ul>
+    <li>Reading</li>
+    <li>Coding</li>
+    <li>Music</li>
+  </ul>
+  <h3>Favorite Video</h3>
+  <iframe width="320" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  <h3>Social Media</h3>
+  <table>
+    <tr><th>Platform</th><th>Link</th></tr>
+    <tr><td>GitHub</td><td><a href="https://github.com">GitHub</a></td></tr>
+    <tr><td>Twitter</td><td><a href="https://twitter.com">Twitter</a></td></tr>
+  </table>
+
+  <!-- 11. Validation Form -->
+  <h2>Validated Form</h2>
+  <form>
+    Username: <input type="text" name="username" maxlength="12" pattern="[A-Za-z0-9]+" required><br>
+    Password: <input type="password" name="password" required><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- 12. Product Page -->
+  <h2>Product Table</h2>
+  <table>
+    <tr><th>Product Name</th><th>Price</th><th>Image</th><th>Action</th></tr>
+    <tr>
+      <td>Product 1</td>
+      <td>$10</td>
+      <td><img src="https://via.placeholder.com/50" alt="Product 1"></td>
+      <td><button>Buy</button></td>
+    </tr>
+    <tr>
+      <td>Product 2</td>
+      <td>$15</td>
+      <td><img src="https://via.placeholder.com/50" alt="Product 2"></td>
+      <td><button>Buy</button></td>
+    </tr>
+  </table>
+
+</body>
+</html>
